@@ -1,0 +1,2 @@
+Async_Serial
+The SCI unit is configured to communicate to a PC terminal using asynchronous mode.

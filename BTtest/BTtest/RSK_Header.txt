@@ -1,0 +1,148 @@
+********************************************************************************
+DESCRIPTION		Renesas Starter Kit Project Readme File
+********************************************************************************
+
+********************************************************************************
+History 		: 05.08.2011 Ver. 1.00 First Release
+********************************************************************************
+
+This project can be debugged with HEW and an E1.
+
+The Quick Start Guide supplied with the RSK can be referred to for help in
+connecting to the target. 
+
+Details of the sample project can be found at the top of the C file which
+contains the project's main() function.
+
+Support:
+    Online technical support and information is available at: 
+	www.renesas.com/renesas_starter_kits
+
+Technical Contact Details:-
+	America: techsupport.america@renesas.com 
+	Europe : tools.support.eu@renesas.com 
+	Japan  : csc@renesas.com 
+
+/*	RSKRX210 - Board Connector Cross-Reference	*/
+Device = R5F52108DFP
+
+********************************************************************************
+PORT	 	PIN NAME/			RING 				COMMON 				BUS	
+NUMBER		FUNCTION			BUS PIN				PIN					Hardware
+********************************************************************************
+---			VCC		 			J1-14, J3-10		JA1-1  				---						
+					
+---			VSS					J1-12, J3-12 		JA1-2, JA1-4		---		 			
+													JA2-4, JA6-24															
+
+---			AVCC0				J4-22				JA1-5				---																
+---			VREFH				J1-1				---					---		
+---			VREFH0				J4-21				---					---		
+																			
+---			AVSS0				---					JA1-6				---																
+---			VREFL				J1-3				---					---					
+---			VREFL0				J4-19				---					---					
+			
+---			EXTAL				---					---					---					
+---			XTAL				---					---					---					
+
+---			XCOUT				J1-9				---					---		
+---			XCIN				J1-8				---					---		
+---			MODE				J1-7				---					E1																						   
+---			RESET_N				J1-10				JA2-1				E1					
+
+P03			DA0					J1-2				JA1-13				---					
+P05			DA1					J4-25				JA1-14				---					
+P07			ADTRG0n				J4-23				JA1-8, JA2-21		---					
+	  
+P12			SCL					J2-9				JA1-26				---					
+P13			SDA_TMO3			J2-8				JA1-25, JA2-20		---					
+P14			LED0_MTCLKA			J2-7				JA2-25				LED0					
+P15			LED1_MTCLKB			J2-6				JA2-26				LED1					
+P16			LED2_MTIOC3D		J2-5				JA2-14				LED2					
+P17			LED3_MTIOC3B		J2-4				JA2-13				LED3					
+
+P20			TXD0				J2-3				JA2-6		 		RS232					
+P21			RXD0_MTIOC1B		J2-2				JA2-8  				RS232						
+P22			SCK0				J2-1				JA2-10				---		
+P23			CTS0RTS0			J1-25				JA2-12				---					
+P24			MTIOC4A_CS0n		J1-24				JA2-15, JA3-27		---			
+P25			MTIOC4C_CS1n		J1-23				JA2-16, JA3-28		---		
+P26			TXD1_CS2n			J1-22				JA6-8, JA3-45		E1					
+P27			SCK1				J1-21				JA6-10				E1						
+
+P30			RXD1				J1-20				JA6-7				E1					
+P31			SW1_IRQ1			J1-19				---					---					
+P32			P32					J1-18				---					---					
+P33			SW2_IRQ3			J1-17				JA1-23				---						
+P34			SW3_IRQ4			J1-16				JA5-9				---					
+P35			NMIn				J1-15				JA2-3 				---						
+
+P40			AD_POT				J4-20				JA1-9				---					
+P41			AN001				J4-18				JA1-10				---					
+P42			AN002				J4-17				JA1-11				---					
+P43			AN003				J4-16				JA1-12				---					
+P44			AN004				J4-15				JA5-1				---					
+P45			AN005				J4-14				JA5-2				---					
+P46			AN006				J4-13				JA5-3				---					
+P47			AN007				J4-12				JA5-4				---					
+
+P50			nWR					J2-19				JA3-48				---					
+P51			nWR1				J2-18				JA3-47				---					
+P52			nRD					J2-17				JA3-25				---					
+P53			BCLK_P53			J2-16				---					---					
+P54			ALE					J2-15				JA3-46				---					
+P55			nWAIT				J2-14				---					---						
+
+PA0			A0					J3-20				JA3-1				---					
+PA1			A1_MTIOC0B			J3-19				JA3-2				---					
+PA2			A2					J3-18				JA3-3				---		 			
+PA3			A3					J3-17				JA3-4 				---					
+PA4			A4_MTIC5U			J3-16				JA3-5, JA6-14		---					
+PA5			A5					J3-15				JA3-6				---					
+PA6			A6_MTIC5V			J3-14				JA3-7, JA6-15		---					
+PA7			A7					J3-13				JA3-8				---					
+
+PB0			A8_MTIC5W			J3-11				JA3-9, JA6-16		---					
+PB1			A9_MTIOC0C			J3-9				JA3-10				---					
+PB2			A10					J3-8				JA3-11				---					
+PB3			A11_MTIOC0A			J3-7				JA3-12				---					
+PB4			A12					J3-6				JA3-13				---					
+PB5			A13_SCK9			J3-5				JA3-14, JA6-11		---					
+PB6			A14_RXD9			J3-4				JA3-15, JA6-12		---					
+PB7			A15_TXD9			J3-3				JA3-16, JA6-9		---					
+
+PC0			A16					J3-2				JA3-37				---					
+PC1			A17					J3-1				JA3-38				---					
+PC2			A18_MTIOC4B			J2-25				JA2-17, JA3-39		---					
+PC3			A19_MTIOC4D			J2-24				JA2-18, JA3-40		---					
+PC4			A20					J2-23				JA3-41				---					
+PC5			A21					J2-22				JA3-42				---					
+PC6			A22					J2-21				JA3-43				---					
+PC7			UB					J2-20				---					---					
+                    
+PD0			D0_IRQ0				J4-11				JA3-17				---					
+PD1			D1_IRQ1				J4-10				JA3-18				---					
+PD2			D2_IRQ2				J4-9				JA3-19				---					
+PD3			D3_IRQ3				J4-8				JA3-20				---					
+PD4			D4_IRQ4				J4-7				JA3-21, JA5-9		---					
+PD5			D5_IRQ5				J4-6				JA3-22, JA5-10		---					
+PD6			D6					J4-5				JA3-23				---					
+PD7			D7_POE0				J4-4				JA2-24, JA3-24		---					
+
+PE0			D8_IO0				J4-3				JA1-15, JA3-29		---					
+PE1			D9_IO1				J4-2				JA1-16, JA3-30		---					
+PE2			D10_IO2				J4-1				JA1-17, JA3-31		---					
+PE3			D11_IO3				J3-25				JA1-18, JA3-32		---					
+PE4			D12_IO4				J3-24				JA1-19, JA3-33		---					
+PE5			D13_IO5				J3-23				JA1-20, JA3-34		---					
+PE6			D14_IO6				J3-22				JA1-21, JA3-35		---					
+PE7			D15_IO7				J3-21				JA1-22, JA3-36		---					
+
+PH0			DLCD4				J2-13				---					LCD					
+PH1			DLCD5_TMO0			J2-12				JA2-19				LCD					
+PH2			DLCD6 				J2-11				JA2-3				LCD					
+PH3			DLCD7				J2-10				---					LCD					
+
+PJ1			DLCDRS_MTIOC3A		J1-6				JA6-13				LCD					
+PJ3			DLCDE_MTIOC3C		J1-4				JA2-11				LCD					
